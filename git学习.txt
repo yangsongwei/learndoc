@@ -1,0 +1,66 @@
+一、添加步骤：
+	1.初始化仓库：
+		git init
+	2、将文件放到仓库中去
+	3.用命令git add告诉Git，把文件添加到仓库：
+		格式：git add 文件名
+	4.用命令git commit告诉Git，把文件提交到仓库：
+		格式： git commit -m 提交说明
+二、查看仓库状态：
+	git status 
+	1.看看具体修改了什么内容：
+		git diff  文件名
+	2.显示从最近到最远的提交日志:
+		git log命令
+	3.把文件回退到上一个版本：
+		git reset --hard HEAD~(版本)
+		HEAD 代表当前版本
+	4.找到以前输入的命令：
+		git reflog
+	5.当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改时
+		git checkout -- file
+	6.当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，
+		第一步用命令
+			git reset HEAD file
+	7.删除一个文件：
+		rm filename
+三、远程仓库：
+   从本地提交到远程仓库：
+	1.关联一个远程库，使用命令:
+		git remote add origin git@server-name:path/repo-name.git
+	2.关联后，第一次推送master分支的所有内容,使用命令:
+		git push -u origin master
+	3.此后，每次本地提交后，只要有必要，就可以使用命令:
+		git push origin master
+		推送最新修改
+   从远程仓库克隆到本地：
+	1. git clone git@github.com:yangsongwei/gitskills.git
+四、分支：
+	1.创建分支：
+		git checkout -b dev  //创建了一个dev 分支
+	2.查看当前分支：
+		git branch
+	3.
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
